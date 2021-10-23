@@ -25,16 +25,17 @@
         <div class="col-md-12">
           <div id="reader"></div>
         </div>
-        <div class="col-md-12">
+        <!-- <div class="col-md-12">
           <h4>SCAN RESULT</h4>
           <div id="result">Result Here</div>
-        </div>
+        </div> -->
       </div>
     </div>
     <script type="text/javascript">
       function onScanSuccess(qrCodeMessage) {
         document.getElementById("result").innerHTML =
-          '<span class="result">' + qrCodeMessage + "</span>";
+          // '<span class="result">' + qrCodeMessage + "</span>";
+          alert('berhasil di scan '+qrCodeMessage)
       }
       function onScanError(errorMessage) {
         //handle scan error
